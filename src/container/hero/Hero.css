@@ -1,0 +1,117 @@
+
+.parallax {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/images/hero.jpg');
+    height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.hero_text {
+    position: absolute; 
+    top: 40%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    
+    
+}
+
+.hero_text h5{
+    color:var(--color-white);
+    font-size:1.4rem;
+    font-weight: 500;
+    font-style: normal;
+}
+.hero_heading{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); 
+    padding: 10px; 
+    border-radius: 10px;
+}
+
+/* .hero_heading h1 {
+    padding:10px;
+    color: white;
+    font-family: "Unna", serif;
+    font-weight: 700;
+    font-style: italic; 
+    font-size: 10rem;
+    margin:0;
+    background-image: url('../../assets/images/hero_text.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+ */
+ .hero_heading h1 {
+    padding:10px;
+    color: var(--color-white);
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-style: italic; 
+    font-size: 10rem;
+    margin:0;
+ }
+
+.text_change {
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute; 
+    top: 60%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+   
+}
+.text_change h3{
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-style: normal;
+    color:var(--color-white);
+}
+.text_change span::before {
+    color:var(--color-wheat);
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 5rem;
+    font-style: normal;
+    content: "Services";
+    animation: animate infinite 5s;
+    padding-left: 10px;
+}
+
+.text_change span {
+    padding-right: 10px;
+}
+
+
+span::before { 
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size:4rem;
+    font-style: normal;
+    content: "Services"; 
+    animation: animate infinite 3s; 
+    padding-left: 10px; 
+} 
+
+@keyframes animate { 
+
+    0% { 
+        content: "Services"; 
+    } 
+
+    50% { 
+        content: "Location"; 
+    } 
+
+    75% { 
+        content: "& Facility"; 
+    } 
+} 
