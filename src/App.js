@@ -1,6 +1,12 @@
+import Facilities from "./container/features/Feature";
+import Testimonial from "./container/testimonial/Testimonial";
+
 function App() {
   return (
-    <div> Hello World </div>
+    <>
+    <Facilities></Facilities>
+ <Testimonial></Testimonial>
+  </>
   );
 }
 
