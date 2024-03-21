@@ -20,7 +20,7 @@ function Hero() {
                     <h1>The Palm</h1>
                     </div>
                     </div>
-                    <div className="text_change">
+                      <div className="text_change">
                         
                         <h3>Come Experience Incredible<span></span></h3> 
                      </div>

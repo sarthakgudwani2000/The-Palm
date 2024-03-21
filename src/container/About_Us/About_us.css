@@ -58,7 +58,7 @@
     letter-spacing: 1px;
 }
 .about_container_info h2{
-   
+    
     font-size:4rem;
     margin-bottom: 2rem;
     font-family:var(--font-serif);
@@ -68,3 +68,22 @@
     font-size: 1rem;
     letter-spacing: 1px;
 }
+.button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:var(--color-dark-green); 
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border: solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--color-light-green); 
+  }
