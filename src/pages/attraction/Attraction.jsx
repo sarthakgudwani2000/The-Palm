@@ -1,21 +1,47 @@
 // AboutUs.js
-import React from 'react';
-import Bhimtal from '../../assets/1.jpg';
-import Kainchi_Dham_Banner from '../../assets/1.jpg';
-import Nainital_Lake from '../../assets/1.jpg';
-import ghorakhal_mandir from '../../assets/1.jpg';
-import Tea_Garden from '../../assets/1.jpg';
-import kyaking from '../../assets/1.jpg';
-import zip_line from '../../assets/1.jpg';
+import React, { useState } from 'react';
+// import Bhimtal from '../../assets/1.jpg';
+// import Kainchi_Dham_Banner from '../../assets/1.jpg';
+// import Nainital_Lake from '../../assets/1.jpg';
+// import ghorakhal_mandir from '../../assets/1.jpg';
+// import Tea_Garden from '../../assets/1.jpg';
+// import kyaking from '../../assets/1.jpg';
+// import zip_line from '../../assets/1.jpg';
 
-import kainchi_dham from '../../assets/1.jpg';
-import Pantnagar_airport from '../../assets/1.jpg';
-import naina_peak from '../../assets/1.jpg';
+// import kainchi_dham from '../../assets/1.jpg';
+// import Pantnagar_airport from '../../assets/1.jpg';
+// import naina_peak from '../../assets/1.jpg';
 
 
 import "./Attraction.css"
 
 const Attraction = () => {
+  const [expanded, setExpanded] = useState(true);
+
+  const handleMouseEnter = () => {
+    if (!expanded) {
+      setExpanded(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (expanded) {
+      setExpanded(false);
+    }
+  };
+
+  const handleSlideMouseEnter = (slideClass) => {
+    if (slideClass !== "slide_1" && expanded) {
+      setExpanded(false);
+    }
+  };
+
+  const handleImageRightMouseLeave = () => {
+    if (!expanded) {
+      setExpanded(true);
+    }
+  };
+
   return (
     <div className="attraction-container">
       <div className="header-container">
@@ -30,32 +56,32 @@ const Attraction = () => {
         <h2>"Dive into the mystical tapestry of Uttarakhand, where every valley tells a story, and each mountain peak whispers a secret."</h2>
       </div>
 
-      <div class="image-right">
-      <div>
-          <h3>Kainchi Dham</h3>
-          <p>Kainchi Dham, also known as Neem Karoli Baba Ashram, is a spiritual retreat in Nainital, Uttarakhand. It's a secluded mountain ashram located in the Kumaon Hills. The word "Kainchi" means "scissors" in Hindi, and the ashram is situated between two hills that form a scissors shape. </p>
-          <footer>8.7 Km | 22 mins</footer>
-        </div>
-
-        <div className="container">
+      <div class="image-right"  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className={`container ${expanded ? 'expanded' : ''}`} onMouseLeave={handleImageRightMouseLeave}>
           <div className="slides">
-            <div className="slide_1">
+            <div className="slide_1" onMouseEnter={() => handleSlideMouseEnter('slide_1')}>
               <div className="slide_info">
                 {/* <p>Outer Islands</p> */}
               </div>
             </div>
-            <div className="slide_1 slide_2">
+            <div className="slide_1 slide_2" onMouseEnter={() => handleSlideMouseEnter('slide_2')}>
               <div className="slide_info">
                 {/* <p>Pacific Harbour and Beqa</p> */}
               </div>
             </div>
-            <div className="slide_1 slide_3">
+            <div className="slide_1 slide_3" onMouseEnter={() => handleSlideMouseEnter('slide_3')}>
               <div className="slide_info">
                 {/* <p>Savusavu & Surrounds</p> */}
               </div>
             </div>
           </div>
         </div>
+        <div>
+          <h3>Kainchi Dham</h3>
+          <p>Kainchi Dham, also known as Neem Karoli Baba Ashram, is a spiritual retreat in Nainital, Uttarakhand. It's a secluded mountain ashram located in the Kumaon Hills. The word "Kainchi" means "scissors" in Hindi, and the ashram is situated between two hills that form a scissors shape. </p>
+          <footer>8.7 Km | 22 mins</footer>
+        </div>
+
       </div>
 
       <div class="image-left">
@@ -144,7 +170,7 @@ const Attraction = () => {
       </div>
 
       <div class="image-right">
-      <div className="container">
+        <div className="container">
           <div className="slides">
             <div className="slide_1">
               <div className="slide_info">
@@ -173,7 +199,7 @@ const Attraction = () => {
       </div>
 
       <div class="image-left">
-      <div className="container">
+        <div className="container">
           <div className="slides">
             <div className="slide_1">
               <div className="slide_info">
@@ -202,7 +228,7 @@ const Attraction = () => {
       </div>
 
       <div class="image-right">
-      <div className="container">
+        <div className="container">
           <div className="slides">
             <div className="slide_1">
               <div className="slide_info">
