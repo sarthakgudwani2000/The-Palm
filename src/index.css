@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body{
     background-color:  #fff;
 }
 * {
     margin: 0;
     padding: 0;
-    font-family: "Outfit", sans-serif;
-    scroll-behavior: smooth;
+    font-family: "Ubuntu", sans-serif;
     box-sizing: border-box;
-}
+    scroll-behavior: smooth;
+    
+  }
 
 
 h1, h4,p, a {
@@ -43,7 +45,11 @@ ul {
 }
 
 :root{
-    --color-black:#1a1a1a;
-    --color-grey:#5a5a5a;
-    --color-heading:#c29a5c;
+    --color-white:white;
+    --color-dark-green:rgb(115, 129, 118);
+    --color-light-green:rgb(186, 208, 191);
+    --color-creame:rgb(255, 226, 178);
+    --color-wheat: wheat;
+   --font-serif:"Unna", serif;
+   --font-sanserif:"Ubuntu",san-serif;
 }

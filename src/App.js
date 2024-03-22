@@ -1,7 +1,7 @@
 import React from "react";
 import './index.css';
 import Home from './routes/Home'
-import AboutUs from './routes/AboutUs'
+import AboutUs from "../src/pages/aboutUs/AboutUs.jsx"
 import ContactUs from './routes/ContactUs'
 import Attraction from './routes/Attraction'
 import { Routes, Route } from "react-router-dom";
