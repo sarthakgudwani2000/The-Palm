@@ -2,11 +2,10 @@ import React from "react";
 import './index.css';
 import Home from './routes/Home'
 import AboutUs from "../src/pages/aboutUs/AboutUs.jsx"
-import ContactUs from './routes/ContactUs'
+import ContactUs from './pages/contactUs/ContactUs.jsx'
 import Attraction from './routes/Attraction'
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from './utils/ScrollToTop';
-
 
 
 export const App = () => {

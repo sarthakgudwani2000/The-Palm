@@ -3,6 +3,7 @@ import "./About_us.css";
 import { Fade } from "react-reveal";
 import hotel from "../../assets/images/about_hotel.jpg"
 import {Link} from "react-router-dom";
+
 const About = () => {
   return (
     <>
@@ -25,7 +26,7 @@ const About = () => {
             calm retreat or thrilling escapades, The Palm in Bhimtal serves as your
             entrance to an unforgettable getaway in the heart of the Himalayas.
             </p>
-            <Link to="/about" className="button">
+            <Link to="/aboutus" className="button">
                More About Us
             </Link>
           </div>
