@@ -2,14 +2,7 @@ import React from "react";
 import './Hero.css';
 
 function Hero() {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true
-      };
+    
     return (
         <div>
             <div className="section">
@@ -19,10 +12,12 @@ function Hero() {
                     <div className="hero_heading">
                     <h1>The Palm</h1>
                     </div>
+                    <h3>Come Experience Incredible</h3> 
                     </div>
+                   
+                  
                       <div className="text_change">
-                        
-                        <h3>Come Experience Incredible<span></span></h3> 
+                         <span></span>
                      </div>
                   </div>
                   

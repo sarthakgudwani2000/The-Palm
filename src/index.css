@@ -46,10 +46,16 @@ ul {
 
 :root{
     --color-white:white;
-    --color-dark-green:rgb(115, 129, 118);
-    --color-light-green:rgb(186, 208, 191);
-    --color-creame:rgb(255, 226, 178);
+    --color-dark-green:#407a61;
+    --color-light-green:rgb(200, 222, 205);
+    --color-creame:rgb(244, 172, 55);
     --color-wheat: wheat;
    --font-serif:"Unna", serif;
    --font-sanserif:"Ubuntu",san-serif;
+    --color-bgGreen: #05281c;
+    --color-offWhite: #fefae0;
+    --color-white:#ffffff;
+    --color-beige:#FFD0A2;
+    --color-cream:#f8f0e8;
+    --color-grey:#edede9;
 }

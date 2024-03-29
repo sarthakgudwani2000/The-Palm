@@ -52,7 +52,7 @@
 .about_container_info h4{
     font-weight: 500;
     color: var(--color-dark-green);
-    border-left: 5px solid var(--color-wheat);
+    border-left: 5px solid var(--color-creame);
     padding-left:1rem;
     margin-bottom: 1rem;
     letter-spacing: 1px;
@@ -85,5 +85,5 @@
   }
   
   .button:hover {
-    background-color: var(--color-light-green); 
+    background-color: rgb(41, 60, 41); 
   }

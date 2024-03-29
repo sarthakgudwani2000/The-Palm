@@ -20,15 +20,15 @@
 
 .hero_text h5{
     color:var(--color-white);
+    text-align: center;
     font-size:1.4rem;
     font-weight: 500;
     font-style: normal;
 }
 .hero_heading{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); 
-    padding: 10px; 
-    border-radius: 10px;
+    
+    padding: 4px; 
+   
 }
 
 /* .hero_heading h1 {
@@ -49,7 +49,7 @@
 }
  */
  .hero_heading h1 {
-    padding:10px;
+    padding:4px;
     color: var(--color-white);
     font-family: var(--font-serif);
     font-weight: 700;
@@ -59,17 +59,20 @@
  }
 
 .text_change {
-    margin-top: 6rem;
+    margin-top: 2rem;
     width: 100%;
     display: flex;
     justify-content: center;
     position: absolute; 
-    top: 60%;
+    top: 70%;
     left: 50%; 
     transform: translate(-50%, -50%);
    
 }
-.text_change h3{
+ h3{
+
+    margin-top: 8rem;
+    text-align: center;
     font-size: 2.5rem;
     font-weight: 300;
     font-style: normal;
@@ -81,25 +84,16 @@
     font-weight: 700;
     font-size: 5rem;
     font-style: normal;
+    text-align: center;
     content: "Services";
     animation: animate infinite 5s;
-    padding-left: 10px;
-}
-
-.text_change span {
-    padding-right: 10px;
+   
 }
 
 
-span::before { 
-    font-family: var(--font-serif);
-    font-weight: 700;
-    font-size:4rem;
-    font-style: normal;
-    content: "Services"; 
-    animation: animate infinite 3s; 
-    padding-left: 10px; 
-} 
+
+
+
 
 @keyframes animate { 
 

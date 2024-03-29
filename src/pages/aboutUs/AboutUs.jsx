@@ -7,7 +7,7 @@ import Testimonial from '../../container/Testimonial/Testimonial.jsx'
 import { Fade } from "react-reveal";
 import hotel from "../../assets/images/about_hotel.jpg"
 import {Link} from "react-router-dom";
-import Navbar from '../../components/navbar/Navbar.jsx'
+
 
 const AboutUs = () => {
   const images = [AboutSectionImage1, AboutSectionImage2, AboutSectionImage3]; 
@@ -27,13 +27,16 @@ const AboutUs = () => {
 
   return (
     <>
-    <Navbar />
     <section className='aboutus'>
       <div className='mask'>
         <img className='aboutusSection-img' src={images[currentImage]} alt='About Section' />
       </div>
       <div className='content'>
-        <h1>Experience Comfort, Indulge In Excellence </h1>
+      <h1>
+          {currentImage === 0 && "Experience Comfort"}
+          {currentImage === 1 && "Indulge In Excellence"}
+          {currentImage === 2 && "Discover Luxury"} 
+        </h1>
         <div>
           
         </div>
