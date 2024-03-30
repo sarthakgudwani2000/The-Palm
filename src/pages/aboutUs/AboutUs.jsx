@@ -3,7 +3,7 @@ import './AboutUs.css'
 import AboutSectionImage1 from '../../assets/images/about_us1.jpeg'
 import AboutSectionImage2 from '../../assets/images/about_us2.jpg'
 import AboutSectionImage3 from '../../assets/images/about_us3.jpg'
-import Testimonial from '../../container/Testimonial/Testimonial.jsx'
+import Testimonial  from '../../container/Testimonial/Testimonial.jsx'
 import { Fade } from "react-reveal";
 import hotel from "../../assets/images/about_hotel.jpg"
 import {Link} from "react-router-dom";
