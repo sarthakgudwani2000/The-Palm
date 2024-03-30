@@ -14,33 +14,10 @@
   margin-top: 50px;
 }
 
-.slide_1.shrinked {
-  min-width: 60px !important;
-}
+/* First Slide Container */
 
-.container.expanded .slide_1 {
-  min-width: 250px;
-}
-
-.container.expanded .slide_1:hover .slide_info {
-  transform: rotate(0deg);
-  left: 20px;
-  bottom: 20px;
-  font-size: 22px;
-}
-
-.container.expanded .slide_1.slide_2,
-.container.expanded .slide_1.slide_3 {
-  min-width: 60px;
-}
-
-.container.expanded .slide_1.slide_2:hover,
-.container.expanded .slide_1.slide_3:hover {
-  min-width: 250px;
-}
-
-.slide_1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/2.jpg);
+.first_slide_container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/Aquarium_Island_Cafe_1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,23 +30,312 @@
   transition: all 0.5s ease;
 }
 
-.slide_1:hover {
+.first_slide_container.shrinked {
+  min-width: 60px !important;
+}
+
+.container.expanded .first_slide_container {
   min-width: 250px;
 }
 
-.slide_1:hover .slide_info {
+.container.expanded .first_slide_container:hover .slide_info {
   transform: rotate(0deg);
   left: 20px;
   bottom: 20px;
   font-size: 22px;
 }
 
+.container.expanded .first_slide_container.slide_2,
+.container.expanded .first_slide_container.slide_3 {
+  min-width: 60px;
+}
+
+.container.expanded .first_slide_container.slide_2:hover,
+.container.expanded .first_slide_container.slide_3:hover {
+  min-width: 250px;
+}
+
+.first_slide_container:hover {
+  min-width: 250px;
+}
+
+.first_slide_container:hover .slide_info {
+  transform: rotate(0deg);
+  left: 20px;
+  bottom: 20px;
+  font-size: 22px;
+}
+
+/* Second Slide Container */
+
+
+.second_slide_container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/Aquarium_Island_Cafe_1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  min-width: 60px;
+  height: 300px;
+  border-radius: 40px;
+  margin: 0 15px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.second_slide_container.shrinked {
+  min-width: 60px !important;
+}
+
+.container.expanded .second_slide_container {
+  min-width: 250px;
+}
+
+.container.expanded .second_slide_container:hover .slide_info {
+  transform: rotate(0deg);
+  left: 20px;
+  bottom: 20px;
+  font-size: 22px;
+}
+
+.container.expanded .second_slide_container.slide_4,
+.container.expanded .second_slide_container.slide_5 {
+  min-width: 60px;
+}
+
+.container.expanded .second_slide_container.slide_4:hover,
+.container.expanded .second_slide_container.slide_5:hover {
+  min-width: 250px;
+}
+
+.second_slide_container:hover {
+  min-width: 250px;
+}
+
+.second_slide_container:hover .slide_info {
+  transform: rotate(0deg);
+  left: 20px;
+  bottom: 20px;
+  font-size: 22px;
+}
+
+/* Third Slide Container */
+
+.third_slide_container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/Aquarium_Island_Cafe_1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  min-width: 60px;
+  height: 300px;
+  border-radius: 40px;
+  margin: 0 15px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.third_slide_container.shrinked {
+  min-width: 60px !important;
+}
+
+.container.expanded .third_slide_container {
+  min-width: 250px;
+}
+
+.container.expanded .third_slide_container:hover .slide_info {
+  transform: rotate(0deg);
+  left: 20px;
+  bottom: 20px;
+  font-size: 22px;
+}
+
+.container.expanded .third_slide_container.slide_6,
+.container.expanded .third_slide_container.slide_7 {
+  min-width: 60px;
+}
+
+.container.expanded .third_slide_container.slide_6:hover,
+.container.expanded .third_slide_container.slide_7:hover {
+  min-width: 250px;
+}
+
+.third_slide_container:hover {
+  min-width: 250px;
+}
+
+.third_slide_container:hover .slide_info {
+  transform: rotate(0deg);
+  left: 20px;
+  bottom: 20px;
+  font-size: 22px;
+}
+
+
+/* Fourth Slide Container */
+
+.fourth_slide_container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/Aquarium_Island_Cafe_1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  min-width: 60px;
+  height: 300px;
+  border-radius: 40px;
+  margin: 0 15px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.fourth_slide_container.shrinked {
+  min-width: 60px !important;
+}
+
+.container.expanded .fourth_slide_container {
+  min-width: 250px;
+}
+
+.container.expanded .fourth_slide_container:hover .slide_info {
+  transform: rotate(0deg);
+  left: 20px;
+  bottom: 20px;
+  font-size: 22px;
+}
+
+.container.expanded .fourth_slide_container.slide_8,
+.container.expanded .fourth_slide_container.slide_9 {
+  min-width: 60px;
+}
+
+.container.expanded .fourth_slide_container.slide_8:hover,
+.container.expanded .third_slide_container.slide_9:hover {
+  min-width: 250px;
+}
+
+.fourth_slide_container:hover {
+  min-width: 250px;
+}
+
+.fourth_slide_container:hover .slide_info {
+  transform: rotate(0deg);
+  left: 20px;
+  bottom: 20px;
+  font-size: 22px;
+}
+
+/* Fifth Slide Container */
+
+.fifth_slide_container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/Aquarium_Island_Cafe_1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  min-width: 60px;
+  height: 300px;
+  border-radius: 40px;
+  margin: 0 15px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.fifth_slide_container.shrinked {
+  min-width: 60px !important;
+}
+
+.container.expanded .fifth_slide_container {
+  min-width: 250px;
+}
+
+.container.expanded .fifth_slide_container:hover .slide_info {
+  transform: rotate(0deg);
+  left: 20px;
+  bottom: 20px;
+  font-size: 22px;
+}
+
+.container.expanded .fifth_slide_container.slide_10,
+.container.expanded .fifth_slide_container.slide_11 {
+  min-width: 60px;
+}
+
+.container.expanded .fifth_slide_container.slide_10:hover,
+.container.expanded .fifth_slide_container.slide_11:hover {
+  min-width: 250px;
+}
+
+.fifth_slide_container:hover {
+  min-width: 250px;
+}
+
+.fifth_slide_container:hover .slide_info {
+  transform: rotate(0deg);
+  left: 20px;
+  bottom: 20px;
+  font-size: 22px;
+}
+
+/* Sixth Slide Container */
+
+.sixth_slide_container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/Aquarium_Island_Cafe_1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  min-width: 60px;
+  height: 300px;
+  border-radius: 40px;
+  margin: 0 15px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.sixth_slide_container.shrinked {
+  min-width: 60px !important;
+}
+
+.container.expanded .sixth_slide_container {
+  min-width: 250px;
+}
+
+.container.expanded .sixth_slide_container:hover .slide_info {
+  transform: rotate(0deg);
+  left: 20px;
+  bottom: 20px;
+  font-size: 22px;
+}
+
+.container.expanded .sixth_slide_container.slide_12,
+.container.expanded .sixth_slide_container.slide_13 {
+  min-width: 60px;
+}
+
+.container.expanded .sixth_slide_container.slide_12:hover,
+.container.expanded .sixth_slide_container.slide_13:hover {
+  min-width: 250px;
+}
+
+.sixth_slide_container:hover {
+  min-width: 250px;
+}
+
+.sixth_slide_container:hover .slide_info {
+  transform: rotate(0deg);
+  left: 20px;
+  bottom: 20px;
+  font-size: 22px;
+}
+
+
+
 .slide_2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/Aquarium_Island_Cafe_2.jpg);
 }
 
 .slide_3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/Aquarium_Island_Cafe_3.jpeg);
 }
 
 .slide_4 {
@@ -88,6 +354,30 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/2.jpg);
 }
 
+.slide_8 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/Aquarium_Island_Cafe_2.jpg);
+}
+
+.slide_9 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/Aquarium_Island_Cafe_3.jpeg);
+}
+
+.slide_10 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/2.jpg);
+}
+
+.slide_11 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/2.jpg);
+}
+
+.slide_12 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/2.jpg);
+}
+
+.slide_13 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/2.jpg);
+}
+
 .slide_info {
   position: absolute;
   bottom: 51px;
@@ -98,6 +388,15 @@
   font-size: 12px;
 }
 
+
+.image-right span {
+  font-size: 15px;
+  text-align:left;
+  margin-left: 20px; 
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+  color: #a7a6a6;
+}
 
 
 .header-container {
@@ -162,6 +461,7 @@
 .header-text h1 {
   font-size: 76px;
   margin-bottom: 20px;
+  color: white;
 }
 
 .header-text p {
@@ -209,7 +509,8 @@
 }
 
 .attraction-heading h2 {
-  color: var(--color-grey);
+  /* color: var(--color-grey); */
+  color: rgb(110, 110, 110);
   font-size: 20px;
   margin-left: 35px;
   margin-right: 35px;
@@ -227,7 +528,7 @@
   margin: 1em 0;
   background-color: white;
   padding: 20px;
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -330,6 +631,46 @@
   }
 }
 
+
+@media screen and (max-width: 768px){
+  .image-right span {
+    font-size: 12px;
+    text-align: center;
+    margin-left: 140px; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    color: #b7b5b5;
+  }
+
+  .image-right h3 {
+    text-align: center;
+    /* padding: -10px; */
+    margin-bottom: 10px; 
+    padding-bottom: 0; 
+    font-size: 30px;
+  }
+
+  .image-right p {
+    text-align: justify;
+    margin: auto;
+    margin-top: 30px; 
+  }
+
+  .image-right {
+    width: 90%;
+    margin: 1em auto;
+  }
+
+  /* .slides .first_slide_container,
+  .slides .second_slide_container,
+  .slides .third_slide_container,
+  .slides .fourth_slide_container,
+  .slides .fifth_slide_container,
+  .slides .sixth_slide_container {
+    width: 40%; /* Adjust slide width */
+  /* }  */
+}
+
 @media screen and (max-width: 660px)
 {
   .image-left img, .image-right img {
@@ -388,4 +729,91 @@
   .image-left h3 {
     text-align:start;    
   } */
+}
+
+
+@media screen and (max-width: 480px) {
+
+  /* First Slide Container */
+  .image-right .slides .first_slide_container {
+    min-width: 250px !important; 
+  }
+
+  .image-right .slides .first_slide_container.slide_2,
+  .image-right .slides .first_slide_container.slide_3 {
+    display: none; 
+  }
+
+  /* Second Slide Container */
+  .image-right .slides .second_slide_container {
+    min-width: 250px !important; 
+  }
+
+  .image-right .slides .second_slide_container.slide_4,
+  .image-right .slides .second_slide_container.slide_5 {
+    display: none; 
+  }
+
+  /* Third Slide Container */
+  .image-right .slides .third_slide_container {
+    min-width: 250px !important; 
+  }
+
+  .image-right .slides .third_slide_container.slide_6,
+  .image-right .slides .third_slide_container.slide_7 {
+    display: none; 
+  }
+
+  /* Fourth Slide Container */
+  .image-right .slides .fourth_slide_container {
+    min-width: 250px !important; 
+  }
+
+  .image-right .slides .fourth_slide_container.slide_8,
+  .image-right .slides .fourth_slide_container.slide_9 {
+    display: none; 
+  }
+
+  /* Fifth Slide Container */
+  .image-right .slides .fifth_slide_container {
+    min-width: 250px !important; 
+  }
+
+  .image-right .slides .fifth_slide_container.slide_10,
+  .image-right .slides .fifth_slide_container.slide_11 {
+    display: none; 
+  }
+
+  /* Sixth Slide Container */
+  .image-right .slides .sixth_slide_container {
+    min-width: 250px !important; 
+  }
+
+  .image-right .slides .sixth_slide_container.slide_12,
+  .image-right .slides .sixth_slide_container.slide_13 {
+    display: none; 
+  }
+
+  .image-right span {
+    font-size: 12px;
+    text-align: center;
+    margin-left: 90px; /* Remove the left margin */
+    margin-top: 10px; /* Add top margin for spacing */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+    color: #b7b5b5;
+  }
+
+  .image-right h3 {
+    text-align: center;
+    /* padding: -10px; */
+    margin-bottom: 10px; /* Remove the bottom margin */
+    padding-bottom: 0; 
+    font-size: 24px;
+  }
+
+  .image-right p {
+    text-align: justify;
+    margin: auto;
+    margin-top: 30px; /* Add top margin for spacing between span and p */
+  }  
 }

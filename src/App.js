@@ -1,6 +1,6 @@
 import React from "react";
 import './index.css';
-import Home from './routes/Home'
+import Home from './routes/Home.js'
 import AboutUs from "../src/pages/aboutUs/AboutUs.jsx"
 import ContactUs from './pages/contactUs/ContactUs.jsx'
 import Attraction from './routes/Attraction'

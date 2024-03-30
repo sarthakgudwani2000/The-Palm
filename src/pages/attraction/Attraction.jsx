@@ -31,7 +31,7 @@ const Attraction = () => {
   };
 
   const handleSlideMouseEnter = (slideClass) => {
-    if (slideClass !== "slide_1" && expanded) {
+    if (slideClass !== "first_slide_container" && expanded) {
       setExpanded(false);
     }
   };
@@ -56,20 +56,21 @@ const Attraction = () => {
         <h2>"Dive into the mystical tapestry of Uttarakhand, where every valley tells a story, and each mountain peak whispers a secret."</h2>
       </div>
 
-      <div class="image-right"  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      {/* First Slide Container */}
+      <div class="image-right" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div className={`container ${expanded ? 'expanded' : ''}`} onMouseLeave={handleImageRightMouseLeave}>
           <div className="slides">
-            <div className="slide_1" onMouseEnter={() => handleSlideMouseEnter('slide_1')}>
+            <div className="first_slide_container" onMouseEnter={() => handleSlideMouseEnter('first_slide_container')}>
               <div className="slide_info">
                 {/* <p>Outer Islands</p> */}
               </div>
             </div>
-            <div className="slide_1 slide_2" onMouseEnter={() => handleSlideMouseEnter('slide_2')}>
+            <div className="first_slide_container slide_2" onMouseEnter={() => handleSlideMouseEnter('slide_2')}>
               <div className="slide_info">
                 {/* <p>Pacific Harbour and Beqa</p> */}
               </div>
             </div>
-            <div className="slide_1 slide_3" onMouseEnter={() => handleSlideMouseEnter('slide_3')}>
+            <div className="first_slide_container slide_3" onMouseEnter={() => handleSlideMouseEnter('slide_3')}>
               <div className="slide_info">
                 {/* <p>Savusavu & Surrounds</p> */}
               </div>
@@ -77,112 +78,32 @@ const Attraction = () => {
           </div>
         </div>
         <div>
-          <h3>Kainchi Dham</h3>
-          <p>Kainchi Dham, also known as Neem Karoli Baba Ashram, is a spiritual retreat in Nainital, Uttarakhand. It's a secluded mountain ashram located in the Kumaon Hills. The word "Kainchi" means "scissors" in Hindi, and the ashram is situated between two hills that form a scissors shape. </p>
-          <footer>8.7 Km | 22 mins</footer>
-        </div>
+          <h3>
+            Aquarium Island Cafe
+          </h3>
+          <span>4.6 Km | 13 mins</span>
 
-      </div>
-
-      <div class="image-left">
-        <div className="container">
-          <div className="slides">
-            <div className="slide_1">
-              <div className="slide_info">
-                {/* <p>Outer Islands</p> */}
-              </div>
-            </div>
-            <div className="slide_1 slide_2">
-              <div className="slide_info">
-                {/* <p>Pacific Harbour and Beqa</p> */}
-              </div>
-            </div>
-            <div className="slide_1 slide_3">
-              <div className="slide_info">
-                {/* <p>Savusavu & Surrounds</p> */}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3>Tea Garden</h3>
           <p>
-            Tea gardens in Uttarakhand offer a picturesque and serene environment, nestled amidst the Himalayan foothills. These gardens boast lush greenery, with rows of tea bushes stretching across the landscape, creating a stunning sight against the backdrop of majestic mountains. The air is filled with the refreshing aroma of tea leaves, and the gentle breeze adds to the tranquility of the surroundings.                        </p>
-          <footer>3.2 Km | 8 mins</footer>
-        </div>
-      </div>
-
-      <div class="image-right">
-        <div className="container">
-          <div className="slides">
-            <div className="slide_1">
-              <div className="slide_info">
-                {/* <p>Outer Islands</p> */}
-              </div>
-            </div>
-            <div className="slide_1 slide_2">
-              <div className="slide_info">
-                {/* <p>Pacific Harbour and Beqa</p> */}
-              </div>
-            </div>
-            <div className="slide_1 slide_3">
-              <div className="slide_info">
-                {/* <p>Savusavu & Surrounds</p> */}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3>Ghorakhal</h3>
-          <p>
-            The Ghoda Khaal Temple, nestled amidst the serene hills of an ancient land, is a sacred sanctuary renowned for its mystical aura and spiritual significance. Legend has it that the temple was built centuries ago by a revered sage, who, guided by divine visions, chose this tranquil spot to establish a place of worship dedicated to the divine embodiment of strength and protection.                        </p>
-          <footer>3.1 Km | 11 mins</footer>
-        </div>
-      </div>
-
-      <div class="image-left">
-        <div className="container">
-          <div className="slides">
-            <div className="slide_1">
-              <div className="slide_info">
-                {/* <p>Outer Islands</p> */}
-              </div>
-            </div>
-            <div className="slide_1 slide_2">
-              <div className="slide_info">
-                {/* <p>Pacific Harbour and Beqa</p> */}
-              </div>
-            </div>
-            <div className="slide_1 slide_3">
-              <div className="slide_info">
-                {/* <p>Savusavu & Surrounds</p> */}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3>Bhimtal Lake</h3>
-          <p>
-            Bhimtal Lake is a picturesque freshwater lake nestled amidst the tranquil hills of Uttarakhand, India. It is located in the town of Bhimtal, named after the legendary character Bhima from the Indian epic Mahabharata. Surrounded by lush greenery and offering breathtaking views of the Himalayan peaks, Bhimtal Lake is a popular tourist destination known for its serene ambiance and natural beauty.
+            Aquarium Island Cafe by the Lake Hill is a unique cafe in Bhimtal, Uttarakhand with a public aquarium and views of the lake. The cafe is located on a small island in the middle of Bhimtal Lake, and its aquarium is home to 40 different species of fish from countries like Mexico, South Africa, and China. The cafe offers a variety of dishes, including local specialties, and some say the food is delicious. The cafe is open every day from 9:30 AM–7 PM.
           </p>
-          <footer>9.8 Km | 23 mins</footer>
         </div>
       </div>
 
-      <div class="image-right">
-        <div className="container">
+      {/* Second Slide Container */}
+      <div class="image-right" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className={`container ${expanded ? 'expanded' : ''}`} onMouseLeave={handleImageRightMouseLeave}>
           <div className="slides">
-            <div className="slide_1">
+            <div className="second_slide_container" onMouseEnter={() => handleSlideMouseEnter('second_slide_container')}>
               <div className="slide_info">
                 {/* <p>Outer Islands</p> */}
               </div>
             </div>
-            <div className="slide_1 slide_2">
+            <div className="second_slide_container slide_4" onMouseEnter={() => handleSlideMouseEnter('slide_4')}>
               <div className="slide_info">
                 {/* <p>Pacific Harbour and Beqa</p> */}
               </div>
             </div>
-            <div className="slide_1 slide_3">
+            <div className="second_slide_container slide_5" onMouseEnter={() => handleSlideMouseEnter('slide_5')}>
               <div className="slide_info">
                 {/* <p>Savusavu & Surrounds</p> */}
               </div>
@@ -190,28 +111,32 @@ const Attraction = () => {
           </div>
         </div>
         <div>
-          <h3>Kyaking</h3>
+          <h3>
+            Aquarium Island Cafe by The Lake Hill
+          </h3>
+          <span>4.6 Km | 13 mins</span>
+
           <p>
-            Kayaking is a water sport where individuals paddle small, narrow boats called kayaks through rivers, lakes, or oceans. Kayaks are typically propelled using a double-bladed paddle, allowing for efficient maneuverability and speed. This activity offers a unique way to explore natural waterways, providing opportunities for both recreational enjoyment and adrenaline-filled adventures.
+            Aquarium Island Cafe by the Lake Hill is a unique cafe in Bhimtal, Uttarakhand with a public aquarium and views of the lake. The cafe is located on a small island in the middle of Bhimtal Lake, and its aquarium is home to 40 different species of fish from countries like Mexico, South Africa, and China. The cafe offers a variety of dishes, including local specialties, and some say the food is delicious. The cafe is open every day from 9:30 AM–7 PM.
           </p>
-          <footer> - Km | - mins</footer>
         </div>
       </div>
 
-      <div class="image-left">
-        <div className="container">
+      {/* Third Slide Container */}
+      <div class="image-right" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className={`container ${expanded ? 'expanded' : ''}`} onMouseLeave={handleImageRightMouseLeave}>
           <div className="slides">
-            <div className="slide_1">
+            <div className="third_slide_container" onMouseEnter={() => handleSlideMouseEnter('third_slide_container')}>
               <div className="slide_info">
                 {/* <p>Outer Islands</p> */}
               </div>
             </div>
-            <div className="slide_1 slide_2">
+            <div className="third_slide_container slide_6" onMouseEnter={() => handleSlideMouseEnter('slide_4')}>
               <div className="slide_info">
                 {/* <p>Pacific Harbour and Beqa</p> */}
               </div>
             </div>
-            <div className="slide_1 slide_3">
+            <div className="third_slide_container slide_7" onMouseEnter={() => handleSlideMouseEnter('slide_5')}>
               <div className="slide_info">
                 {/* <p>Savusavu & Surrounds</p> */}
               </div>
@@ -219,28 +144,32 @@ const Attraction = () => {
           </div>
         </div>
         <div>
-          <h3>Zip Line</h3>
+          <h3>
+            Aquarium Island Cafe by The Lake Hill
+          </h3>
+          <span>4.6 Km | 13 mins</span>
+
           <p>
-            A zip line is an exhilarating outdoor activity that involves riding along a suspended cable or wire, typically mounted between two points at different elevations. Participants are equipped with a harness and safety gear, allowing them to glide swiftly along the line, often through scenic landscapes or forests. Zip lining offers an adrenaline rush and a unique way to experience nature from a thrilling perspective.
+            Aquarium Island Cafe by the Lake Hill is a unique cafe in Bhimtal, Uttarakhand with a public aquarium and views of the lake. The cafe is located on a small island in the middle of Bhimtal Lake, and its aquarium is home to 40 different species of fish from countries like Mexico, South Africa, and China. The cafe offers a variety of dishes, including local specialties, and some say the food is delicious. The cafe is open every day from 9:30 AM–7 PM.
           </p>
-          <footer> - Km | - mins</footer>
         </div>
       </div>
 
-      <div class="image-right">
-        <div className="container">
+      {/* Fourth Slide Container */}
+      <div class="image-right" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className={`container ${expanded ? 'expanded' : ''}`} onMouseLeave={handleImageRightMouseLeave}>
           <div className="slides">
-            <div className="slide_1">
+            <div className="fourth_slide_container" onMouseEnter={() => handleSlideMouseEnter('fourth_slide_container')}>
               <div className="slide_info">
                 {/* <p>Outer Islands</p> */}
               </div>
             </div>
-            <div className="slide_1 slide_2">
+            <div className="fourth_slide_container slide_8" onMouseEnter={() => handleSlideMouseEnter('slide_8')}>
               <div className="slide_info">
                 {/* <p>Pacific Harbour and Beqa</p> */}
               </div>
             </div>
-            <div className="slide_1 slide_3">
+            <div className="fourth_slide_container slide_9" onMouseEnter={() => handleSlideMouseEnter('slide_9')}>
               <div className="slide_info">
                 {/* <p>Savusavu & Surrounds</p> */}
               </div>
@@ -248,14 +177,82 @@ const Attraction = () => {
           </div>
         </div>
         <div>
-          <h3>Nainital</h3>
+          <h3>
+            Aquarium Island Cafe by The Lake Hill
+          </h3>
+          <span>4.6 Km | 13 mins</span>
+
           <p>
-            The centerpiece of Nainital is Naini Lake, a pear-shaped freshwater lake surrounded by hills. Apart from Naini Lake, there are several other attractions in and around Nainital that draw visitors. Naina Devi Temple, situated on the northern shore of the lake, is a revered Hindu pilgrimage site dedicated to Goddess Naina Devi. Nainital is a perfect destination for nature lovers, adventure enthusiasts, and those seeking a tranquil retreat amidst the Himalayan splendor.
+            Aquarium Island Cafe by the Lake Hill is a unique cafe in Bhimtal, Uttarakhand with a public aquarium and views of the lake. The cafe is located on a small island in the middle of Bhimtal Lake, and its aquarium is home to 40 different species of fish from countries like Mexico, South Africa, and China. The cafe offers a variety of dishes, including local specialties, and some say the food is delicious. The cafe is open every day from 9:30 AM–7 PM.
           </p>
-          <footer> 13.5 Km | 34 mins</footer>
         </div>
       </div>
 
+      {/* Fifth Slide Container */}
+      <div class="image-right" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className={`container ${expanded ? 'expanded' : ''}`} onMouseLeave={handleImageRightMouseLeave}>
+          <div className="slides">
+            <div className="fifth_slide_container" onMouseEnter={() => handleSlideMouseEnter('fifth_slide_container')}>
+              <div className="slide_info">
+                {/* <p>Outer Islands</p> */}
+              </div>
+            </div>
+            <div className="fifth_slide_container slide_10" onMouseEnter={() => handleSlideMouseEnter('slide_10')}>
+              <div className="slide_info">
+                {/* <p>Pacific Harbour and Beqa</p> */}
+              </div>
+            </div>
+            <div className="fifth_slide_container slide_11" onMouseEnter={() => handleSlideMouseEnter('slide_11')}>
+              <div className="slide_info">
+                {/* <p>Savusavu & Surrounds</p> */}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3>
+            Aquarium Island Cafe by The Lake Hill
+          </h3>
+          <span>4.6 Km | 13 mins</span>
+
+          <p>
+            Aquarium Island Cafe by the Lake Hill is a unique cafe in Bhimtal, Uttarakhand with a public aquarium and views of the lake. The cafe is located on a small island in the middle of Bhimtal Lake, and its aquarium is home to 40 different species of fish from countries like Mexico, South Africa, and China. The cafe offers a variety of dishes, including local specialties, and some say the food is delicious. The cafe is open every day from 9:30 AM–7 PM.
+          </p>
+        </div>
+      </div>
+
+      {/* Sixth Slide Container */}
+      <div class="image-right" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className={`container ${expanded ? 'expanded' : ''}`} onMouseLeave={handleImageRightMouseLeave}>
+          <div className="slides">
+            <div className="sixth_slide_container" onMouseEnter={() => handleSlideMouseEnter('sixth_slide_container')}>
+              <div className="slide_info">
+                {/* <p>Outer Islands</p> */}
+              </div>
+            </div>
+            <div className="sixth_slide_container slide_12" onMouseEnter={() => handleSlideMouseEnter('slide_12')}>
+              <div className="slide_info">
+                {/* <p>Pacific Harbour and Beqa</p> */}
+              </div>
+            </div>
+            <div className="sixth_slide_container slide_13" onMouseEnter={() => handleSlideMouseEnter('slide_13')}>
+              <div className="slide_info">
+                {/* <p>Savusavu & Surrounds</p> */}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3>
+            Aquarium Island Cafe by The Lake Hill
+          </h3>
+          <span>4.6 Km | 13 mins</span>
+
+          <p>
+            Aquarium Island Cafe by the Lake Hill is a unique cafe in Bhimtal, Uttarakhand with a public aquarium and views of the lake. The cafe is located on a small island in the middle of Bhimtal Lake, and its aquarium is home to 40 different species of fish from countries like Mexico, South Africa, and China. The cafe offers a variety of dishes, including local specialties, and some say the food is delicious. The cafe is open every day from 9:30 AM–7 PM.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
