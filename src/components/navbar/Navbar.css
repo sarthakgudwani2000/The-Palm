@@ -10,22 +10,22 @@
 
 }
 .nav-menu li:hover {
-    background-color: rgb(203, 200, 200)
+    background-color: rgb(234, 234, 234)
   }
 
 .nav-menu li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     /* color:  #fff; */
 }
 
 .navbar_imgBox{
-  width: 12rem;
+  width: 9rem;
   margin-left: 2rem;
 }
 .navbar_imgBox img{
   width: 100%;
-  height: 3rem;
+  
 
 }
 
@@ -33,11 +33,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.25rem;
+    padding: 2rem 2.25rem;
     position: fixed;
     width: 100%;
     z-index: 10;
-    height: 10%;
+    height: 7%;
     background-color: white;
     /* padding: 5rem 5rem;    */
     /* transition: height 0.3s ease-in-out; */

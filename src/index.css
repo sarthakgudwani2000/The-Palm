@@ -58,9 +58,8 @@ ul {
     --font-sanserif: "Ubuntu", san-serif;
     --color-bgGreen: #05281c;
     --color-offWhite: #fefae0;
-    --color-white: #ffffff;
-    --color-beige: #FFD0A2;
-    --color-cream: #f8f0e8;
-    --color-grey: #edede9;
-    --color-heading: #c29a5c;
+    --color-white:#ffffff;
+    --color-beige:#FFD0A2;
+    --color-cream:#f8f0e8;
+    --color-grey:#5a5a5a;
 }

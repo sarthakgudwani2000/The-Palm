@@ -1,115 +1,139 @@
-/* RoomsPage.css */
 
 .rooms-container {
-    margin: 20px auto;
-    max-width: 100%;
-    margin-top: 7rem;
-    margin-bottom: 7rem;
-  }
-  
-  .head {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .head h1 {
-    font-size: 55px;
-    color: #407a61;
-    margin-bottom: 4rem;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .room-card {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    max-width: 300px;
-    padding: 20px;
-    height: 435px;
-  }
+  margin: 20px auto;
+  max-width: 100%;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  background-color: #f3eddd;
+  padding: 6rem 0;
+}
 
-.room-card:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease;
-    transform: scale(1.05);
-  }
- 
- 
-  .room-card .middle {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    opacity: 0;
-    transition:  0.5s ease;
-  }
-  
-  .room-card:hover img {
-    opacity: 0.6;
-  }
-  .room-card:hover .middle {
-    opacity: 1;
-  }
-  
-  .room-card .middle h2 {
-    color: white; /* Text color */
-    background-color: #407a61;/* Background color with transparency */
-    padding: 10px 20px; /* Padding around the text */
-    border-radius: 5px; /* Rounded corners */
-  } 
-  
-  .room-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-  }
-  
-  .room-card h2 {
-    font-size: 27px;
-    color: #407a61;
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  
-  .room-card p {
-   font-size: 19px;
-   margin: 5px;
-   text-align:left;
-  }
+.head {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
+.head h1 {
+  font-size: 55px;
+  color: #4e492a;
+  margin-bottom: 4rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.room-card {
   
-  
-  .room-card ul {
-    margin-top: 20px;
-    list-style-type: none;
-    padding: 0; 
-  }
-  
-  .room-card ul li {
-    margin-bottom: 10px; 
-    font-size: 18px; 
-    line-height: 1; 
-  }
-  
-  .room-card ul li svg {
-    text-align: start;
-    font-size: 22px;
-    vertical-align: middle; /* Align SVG icons vertically */
-    margin-right: 5px; /* Add spacing between icon and text */
-    color: #407a61;
-  }
+  background-color: var(--color-white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  max-width: 300px;
+  height: 485px;
+  position: relative;
+  padding: 10px;
+}
+
+.room-card:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+
+.room-card .middle h2 {
+  color: white; 
+  background-color: #407a61;
+  padding: 10px 10px; 
+  border-radius: 5px; 
+} 
+
+.room-card img {
+  object-fit: cover;
+
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  opacity: 1;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.room-card h2 {
+  font-size: 27px;
+  color: #407a61;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.room-card p {
+ font-size: 19px;
+ margin: 5px;
+}
+
+
+
+.room-card ul {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0; 
+}
+
+.room-card ul li {
+  margin-bottom: 10px; 
+  font-size: 18px; 
+  line-height: 1; 
+}
+
+.room-card ul li svg {
+  text-align: start;
+  font-size: 22px;
+  vertical-align: middle; /* Align SVG icons vertically */
+  margin-right: 5px; /* Add spacing between icon and text */
+  color: #407a61;
+}
+
+.modalimg {
+  position: fixed;
+  transform: translate(-50%,-50%); 
+  height: 400px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:2; /* Ensure the modal appears above other content */
+}
+
+
+
+.close {
+  position: absolute;
+  top: 15%;
+  left: 70%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-size: 54px;
+  color: black;
+}
+.blur{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1; /* Ensure it's behind the modal */
+  display: flex;
+    justify-content: center; 
+    align-items: center;
+}
   
 
   

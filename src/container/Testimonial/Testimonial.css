@@ -1,11 +1,11 @@
 .new-container{
-  margin-top: 7rem;
+  margin: 7rem;
 }
 
 .testimonial-container {
     display: flex;
     align-items: center;
-    margin-left: 16%;
+    margin-left: 20%;
     flex-wrap: flex;
   }
 
@@ -14,7 +14,7 @@
     flex-direction: column;
     align-items: center;
     width: 60%; 
-    height: 40%;
+    height: 80%;
     margin-bottom: 20px; 
     padding: 20px;
     border: 1px solid #ccc;
@@ -23,7 +23,7 @@
   }
   
   .testimonial .content {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.5;
     margin-bottom: 10px;
     color: var(--color-grey);
@@ -32,14 +32,15 @@
   .testimonial .name {
     font-size: 16px;
     font-style: italic;
-    color: #407a61; 
+    color: var(--color-dark-green);
+
     margin-top: 12px;
 
   }
 
   .background-icon {
       position: absolute;
-      top: 30%;
+      top: 20%;
     }
     
     .quote-icon {
@@ -54,7 +55,7 @@ margin-bottom: 15px;
   }
 
 .head{
-  color: #407a61; 
+  color: var(--color-dark-green);
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;

@@ -14,7 +14,7 @@ import { IoBonfireSharp } from "react-icons/io5";
 
 const Facilities = () => {
     return (
-        <div className="container">
+        <div className="facilities_container">
             <h1>Facilities</h1>
 
             <div className='facilities-container'>
