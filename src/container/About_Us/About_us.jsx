@@ -9,7 +9,7 @@ const About = () => {
       <section className="about">
         <div className="about_container">
         
-        <Fade left duration={1700} >
+        <Fade left distance="20%" duration={1700} >
           <div className="about_container_info">
             <h4>WELCOME TO THE PALM </h4>
             <h2>

@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
-
+import { Fade } from "react-reveal";
 import './Testimonial.css';
 
 const Testimonial = () => {
@@ -20,10 +20,13 @@ const Testimonial = () => {
 
   return (
     <div className='new-container'>
-<h1 className='head'>Discover firsthand experiences from our guests, their feedback reflects the quality of service and memorable moments they've encountered.</h1>
+       <Fade bottom distance="20%" duration={1700} >
+         <h1 className='head'>Explore real stories from our guests, sharing their feedback and unforgettable experiences</h1>
+      </Fade>
     <Slider {...settings}>
 
     <div className='testimonial-container'>
+   
         <div className="testimonial">    
  <p className="content">'My stay at The Palm was delightful. The combo of a prime location, comfortable accommodation, excellent service, and top-notch facilities made for a memorable experience. highly recommend this hotel.'</p>
           <div className="background-icon">
@@ -31,9 +34,10 @@ const Testimonial = () => {
         </div>
           <p className="name">'Aditi Sharma'</p>
           </div>
+        
           </div>
         
-          <div className='testimonial-container'>
+    <div className='testimonial-container'>
           
 
       <div className="testimonial">

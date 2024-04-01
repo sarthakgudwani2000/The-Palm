@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { MdOutlineZoomOutMap } from "react-icons/md";
+
 // import { PiMountainsFill } from "react-icons/pi";
 import { BiSolidArea } from 'react-icons/bi';
 import { IoBed, IoPerson } from 'react-icons/io5';
 import suit from '../../assets/images/room3.jpg';
-
+import { Fade } from "react-reveal";
 import exroom from '../../assets/images/room1.jpg';
 import sdroom from '../../assets/images/room2.jpg';
 import './Rooms.css';
@@ -22,11 +24,18 @@ const RoomsPage = () => {
   return (
     <div className='rooms-container'>
       <div className='head'>
+      <Fade bottom distance="20%" duration={1700} >
         <h1>Our Rooms</h1>
+        </Fade>
       </div>
       <div className='container'>
+      <Fade bottom distance="20%" duration={1700} >
         <div className="room-card" onClick={() => handleImageClick(exroom)}>
+        <MdOutlineZoomOutMap className="zoom-icon" />
+
           <img src={exroom} alt=''/>
+
+
           <div className='middle'>
             <h2>Executive Room</h2>
           </div>
@@ -39,6 +48,8 @@ const RoomsPage = () => {
         </div>
 
         <div className="room-card" onClick={() => handleImageClick(sdroom)}>
+        <MdOutlineZoomOutMap className="zoom-icon" />
+
           <img src={sdroom} alt=""/>
           <div className='middle'>
             <h2>Super Deluxe Room</h2>
@@ -52,6 +63,8 @@ const RoomsPage = () => {
         </div>
 
         <div className="room-card" onClick={() => handleImageClick(suit)}>
+        <MdOutlineZoomOutMap className="zoom-icon" />
+
           <img src={suit} alt=''/>
           <div className='middle'>
             <h2>Palm Suit</h2>
@@ -63,6 +76,7 @@ const RoomsPage = () => {
             <li><IoBed></IoBed> Queen Bed</li>
           </ul>
         </div>
+        </Fade>
       </div>
 
       {/* Modal for displaying the image */}

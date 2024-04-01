@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Fade } from "react-reveal";
 import './Facilities.css';
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 
@@ -15,6 +15,7 @@ import { IoBonfireSharp } from "react-icons/io5";
 const Facilities = () => {
     return (
         <div className="facilities_container">
+              <Fade bottom distance="20%" duration={1700} >
             <h1>Facilities</h1>
 
             <div className='facilities-container'>
@@ -98,6 +99,7 @@ const Facilities = () => {
                     </div>
                 </div>
             </div>
+            </Fade>
         </div>
     );
 }

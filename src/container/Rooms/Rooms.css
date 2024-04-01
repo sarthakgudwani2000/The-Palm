@@ -1,11 +1,11 @@
 
 .rooms-container {
-  margin: 20px auto;
+  
   max-width: 100%;
-  margin-top: 7rem;
+  
   margin-bottom: 7rem;
   background-color: #f3eddd;
-  padding: 6rem 0;
+  padding: 7rem 0;
 }
 
 .head {
@@ -21,7 +21,7 @@
 
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -32,10 +32,12 @@
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 20px;
-  max-width: 300px;
+  max-width: 350px;
+
+  margin: 3rem;
   height: 485px;
   position: relative;
-  padding: 10px;
+  padding: 8px;
 }
 
 .room-card:hover{
@@ -48,7 +50,7 @@
 
 .room-card .middle h2 {
   color: white; 
-  background-color: #407a61;
+  background-color: #4e492a;
   padding: 10px 10px; 
   border-radius: 5px; 
 } 
@@ -66,15 +68,16 @@
 }
 
 .room-card h2 {
-  font-size: 27px;
-  color: #407a61;
+  font-size: 1.2rem;
+  color: #4e492a;
   margin-bottom: 15px;
   text-align: center;
 }
 
 .room-card p {
- font-size: 19px;
+ font-size: 1rem;
  margin: 5px;
+ color:var(--color-grey)
 }
 
 
@@ -87,16 +90,17 @@
 
 .room-card ul li {
   margin-bottom: 10px; 
-  font-size: 18px; 
+  font-size: 1rem; 
+  color:var(--color-grey);
   line-height: 1; 
 }
 
 .room-card ul li svg {
   text-align: start;
-  font-size: 22px;
+  font-size: 1.2rem;
   vertical-align: middle; /* Align SVG icons vertically */
   margin-right: 5px; /* Add spacing between icon and text */
-  color: #407a61;
+  color: #4e492a;
 }
 
 .modalimg {
@@ -116,7 +120,7 @@
   position: absolute;
   top: 15%;
   left: 70%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   cursor: pointer;
   font-size: 54px;
   color: black;
@@ -134,6 +138,39 @@
     justify-content: center; 
     align-items: center;
 }
-  
+.zoom-icon {
+  position: absolute;
+  top: 195px;
+  right: 10px; /* Adjust as needed */
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.5); /* Optional: Add a background color for better visibility */
 
+  padding: 4px; 
+  cursor: pointer; 
+}
+  
+@media (max-width: 768px) {
+
+  .modalimg{
+    height: 300px;
+    width: 400px;
+  }
+  .close {
+    left: 85%;
+    top: 23%; /* Adjust the top position for small screens */
+    font-size: 46px; /* Adjust font size for small screens */
+  }
+  
+  
+  }
+  
+  @media (max-width: 480px) {
+    .zoom-icon , .modalimg , .close, .blur{
+      display: none;
+    }
+  }
+  
+  
+  
+    
   

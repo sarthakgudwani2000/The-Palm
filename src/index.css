@@ -50,8 +50,9 @@ ul {
 
 :root {
     --color-white: white;
-    --color-dark-green: #407a61;
-    --color-light-green: rgb(200, 222, 205);
+    --color-dark-green: #AB8A62;
+    
+    --color-light-green: #fef6ed;
     --color-creame: rgb(244, 172, 55);
     --color-wheat: wheat;
     --font-serif: "Unna", serif;
@@ -62,4 +63,5 @@ ul {
     --color-beige:#FFD0A2;
     --color-cream:#f8f0e8;
     --color-grey:#5a5a5a;
+    --color-light-brown:#8e826f;
 }
