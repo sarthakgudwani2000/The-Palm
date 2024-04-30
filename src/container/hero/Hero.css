@@ -76,7 +76,7 @@
 }
  .subheading h3{
 
-    margin-top: 5rem;
+    margin-top: 3rem;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 400;
@@ -84,6 +84,7 @@
     color:var(--color-white);
     text-shadow: 0 0 6px #000000, 0 0 5px #555555;
 }
+
 .text_change span::before {
     color:var(--color-wheat);
     font-family: var(--font-serif);
@@ -94,7 +95,6 @@
     text-align: center;
     content: "Services";
     animation: animate infinite 5s;
-   
 }
 
 

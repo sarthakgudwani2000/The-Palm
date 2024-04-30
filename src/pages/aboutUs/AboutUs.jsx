@@ -6,6 +6,8 @@ import AboutSectionImage3 from '../../assets/images/about_us3.jpg'
 import Testimonial  from '../../container/Testimonial/Testimonial.jsx'
 import { Fade } from "react-reveal";
 import hotel from "../../assets/images/about_hotel.jpg"
+import Footer from '../../components/footer/Footer.jsx'
+import Navbar from '../../components/navbar/Navbar.jsx'
 
 
 const AboutUs = () => {
@@ -26,6 +28,7 @@ const AboutUs = () => {
 
   return (
     <>
+    <Navbar/>
     <section className='aboutus'>
       <div className='mask'>
         <img className='aboutusSection-img' src={images[currentImage]} alt='About Section' />
@@ -56,18 +59,18 @@ const AboutUs = () => {
         
         <Fade left duration={1700} >
           <div className="about_container_info">
-            <h4>WELCOME TO THE PALM </h4>
+            <h4>WELCOME TO HOTEL BLISS </h4>
             <h2>
               Enjoy Your Luxury Experience
             </h2>
             <p>
             Situated in the scenic Bhimtal town, 
-            The Palm welcomes you to discover serenity amidst the embrace of nature.
+            Hotel bliss welcomes you to discover serenity amidst the embrace of nature.
             With a view of the tranquil Bhimtal Lake, our establishment provides a 
             harmonious mix of contemporary luxury and rustic allure.
             Immerse yourself in the awe-inspiring beauty of the environment
             while enjoying our genuine hospitality. Whether you're looking for a 
-            calm retreat or thrilling escapades, The Palm in Bhimtal serves as your
+            calm retreat or thrilling escapades, Hotel bliss in Bhimtal serves as your
             entrance to an unforgettable getaway in the heart of the Himalayas.
             </p>
            
@@ -86,6 +89,7 @@ const AboutUs = () => {
      
     </section>
     <Testimonial/>
+    <Footer/>
     </>
   )
 }

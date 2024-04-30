@@ -11,21 +11,15 @@ const About = () => {
         
         <Fade left distance="20%" duration={1700} >
           <div className="about_container_info">
-            <h4>WELCOME TO THE PALM </h4>
+            <h4>WELCOME TO HOTEL BLISS</h4>
             <h2>
               Enjoy Your Luxury Experience
             </h2>
             <p>
-            Situated in the scenic Bhimtal town, 
-            The Palm welcomes you to discover serenity amidst the embrace of nature.
-            With a view of the tranquil Bhimtal Lake, our establishment provides a 
-            harmonious mix of contemporary luxury and rustic allure.
-            Immerse yourself in the awe-inspiring beauty of the environment
-            while enjoying our genuine hospitality. Whether you're looking for a 
-            calm retreat or thrilling escapades, The Palm in Bhimtal serves as your
-            entrance to an unforgettable getaway in the heart of the Himalayas.
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             </p>
-            <Link to="/about" className="button">
+            <Link to="/aboutus" className="button">
                More About Us
             </Link>
           </div>

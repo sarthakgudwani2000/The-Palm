@@ -28,7 +28,7 @@ const Testimonial = () => {
     <div className='testimonial-container'>
    
         <div className="testimonial">    
- <p className="content">'My stay at The Palm was delightful. The combo of a prime location, comfortable accommodation, excellent service, and top-notch facilities made for a memorable experience. highly recommend this hotel.'</p>
+ <p className="content">'My stay at Hotel bliss was delightful. The combo of a prime location, comfortable accommodation, excellent service, and top-notch facilities made for a memorable experience. highly recommend this hotel.'</p>
           <div className="background-icon">
           <RiDoubleQuotesL className="quote-icon" />
         </div>
@@ -42,11 +42,11 @@ const Testimonial = () => {
 
       <div className="testimonial">
          
-          <p className="content">'My time at The Palm was delightful. Its prime location, comfortable accommodation, excellent service, and top-notch facilities made for a memorable experience. Highly recommend this hotel.'</p>
+          <p className="content">'My time at Hotel bliss was delightful. Its prime location, comfortable accommodation, excellent service, and top-notch facilities made for a memorable experience. Highly recommend this hotel.'</p>
           <div className="background-icon">
           <RiDoubleQuotesL className="quote-icon" />
         </div>
-            <p className="name">'Vikas Chauhan'</p>
+            <p className="name">'Jane'</p>
           </div>
       </div>
       <div className='testimonial-container'>
@@ -54,22 +54,22 @@ const Testimonial = () => {
 
       <div className="testimonial">
           
-          <p className="content">'My enjoyable time at The Palm was enhanced by its prime location, cozy accommodation, exceptional service, and top-tier facilities. I highly recommend this hotel for a memorable experience'</p>
+          <p className="content">'My enjoyable time at Hotel bliss was enhanced by its prime location, cozy accommodation, exceptional service, and top-tier facilities. I highly recommend this hotel for a memorable experience'</p>
           <div className="background-icon">
           <RiDoubleQuotesL className="quote-icon" />
         </div>
-            <p className="name">'Ankur Kumar'</p>
+            <p className="name">'John doe'</p>
           </div>
     </div>
 
     <div className='testimonial-container'>
       <div className="testimonial">
           
-          <p className="content">'A delightful stay at The Palm, with its prime location, cozy accommodation, exceptional service, and top-notch facilities, creates an unforgettable experience. Highly recommend this hotel.'</p>
+          <p className="content">'A delightful stay at Hotel bliss, with its prime location, cozy accommodation, exceptional service, and top-notch facilities, creates an unforgettable experience. Highly recommend this hotel.'</p>
           <div className="background-icon">
           <RiDoubleQuotesL className="quote-icon" />
         </div>
-            <p className="name">'Naneet Kumar'</p>
+            <p className="name">'abc'</p>
           </div>
       </div>
 
@@ -77,11 +77,11 @@ const Testimonial = () => {
 
       <div className="testimonial">
           
-          <p className="content">'A stay at The Palm proved delightful, blending prime location, comfortable accommodation, excellent service, and top-notch facilities for a memorable experience. Highly recommend the hotel.'</p>
+          <p className="content">'A stay at Hotel bliss proved delightful, blending prime location, comfortable accommodation, excellent service, and top-notch facilities for a memorable experience. Highly recommend the hotel.'</p>
           <div className="background-icon">
           <RiDoubleQuotesL className="quote-icon" />
         </div>
-            <p className="name">'Sarthak Gudwani'</p>
+            <p className="name">'xyz'</p>
           </div>
       </div>
     </Slider>

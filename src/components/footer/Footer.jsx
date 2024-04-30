@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import Logo from '../../assets/images/white_logo.png';
+import Logo from '../../assets/images/Picture1.png';
 import { FaHome, FaMailBulk, FaPhone } from 'react-icons/fa';
 
 // import { RiInstagramLine, RiTwitterLine, RiLinkedinLine, RiGithubLine } from 'react-icons/ri';
@@ -16,20 +16,17 @@ const Footer = () => {
     };
     return (
         <footer className="hero">
-            <div className="logo-container">
-                <img src={Logo} alt="Logo" className="logo" />
-            </div>
+
             <div className="container flex">
                 <div className="container__about">
                     <h2>About</h2>
-                    <p>A young software developer, starting his professional life, learning the most used languages in this industry, PYTHON, C++, HTML, CSS, and JAVASCRIPT.</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
                 </div>
                 <div className="container-pages flex">
                     <div className="container__recentpages">
                         <h2>Quick Links</h2>
                         <ul>
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">Gallery</a></li>
                             <li><a href="/attractions">Attractions</a></li>
                             <li><a href="/aboutus">About Us</a></li>
                             <li><a href="/contactus">Contact Us</a></li>
@@ -41,25 +38,17 @@ const Footer = () => {
                             <li>
                                 <FaHome />
                                 <a href="https://www.google.com/maps/place/The+Palm+Resort-8449122921/@29.3676741,79.5403515,17z/data=!4m9!3m8!1s0x39a0982500000001:0x3db2f70952143ad4!5m2!4m1!1i2!8m2!3d29.3676741!4d79.5429264!16s%2Fg%2F11h5dn0457?entry=ttu" target='_blank'>
-                                    Mehragaon, Bhagatpura, Uttarakhand 263136
+                                   ABC street , Bhimtal, Uttarakhand 
                                 </a>
                             </li>
-                            <li onClick={handlePhoneClick}> <FaPhone /> <a>08449122921</a></li>
-                            <li onClick={handleEmailClick}> <FaMailBulk /> <a href="">palmhotelbhimtal@gmail.com</a></li>
+                            <li onClick={handlePhoneClick}> <FaPhone /> <a>9999999999</a></li>
+                            <li onClick={handleEmailClick}> <FaMailBulk /> <a href="">hotelbliss@email.com</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div className="line__separate"></div>
-            <div className="footer_copyRight">
-                <h4>
-                    All Rights Reserved &#169;
-                    <a href="https://thezonzo.com/ " className="zonzo-text">
-                        The Zonzo{" "}
-                    </a>{" "}
-                    2024
-                </h4>
-            </div>
+           
 
             {/* <div className="icons">
                     <a href="https://t.co/VBNNTjtw3F" className="icon1 icon--instagram">

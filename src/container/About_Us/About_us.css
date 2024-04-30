@@ -12,12 +12,11 @@
 
 .about_container_imgBox {
     
-    /* background-color: yellowgreen; */
     height: 35rem;
     width: 25rem;
     
     position: relative;
-    border: 10px solid var(--color-white);
+    border: 10px solid var(--color-dark-green);
 
 }
 
@@ -30,9 +29,8 @@
 
 .about_container_imgBox::before{
     content: "";
-    /* background-color: blue; */
     background: url("../../assets/images/about_room.jpg") center/cover; 
-    border: 10px  solid var(--color-dark-green);
+    border: 10px  solid var(--color-white);
     height: 20rem;
     width: 17rem;
     position: absolute;

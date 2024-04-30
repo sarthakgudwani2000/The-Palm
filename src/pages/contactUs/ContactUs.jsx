@@ -20,7 +20,7 @@ const ContactUs = () => {
         <div className="contact_main">
           <div className="contact_main_heading">
           <Fade bottom distance="20%" duration={1700} >
-          <h1>"Get in Touch with THE PALM"</h1>
+          <h1>"Get in Touch with Hotel bliss"</h1>
             <h4>Reach Out for Your Perfect Stay</h4>
             </Fade>
           </div>
@@ -40,7 +40,7 @@ const ContactUs = () => {
                   />
                 </div>
                 <div className="contact_main_container_infoBox_card_info">
-                  <p>The Palm Hotel, Mehra Gaon, Bhimtal  </p>
+                  <p>Hotel bliss , ABC street, Bhimtal  </p>
                   <p>Dist. Nainital, Uttarakhand</p>
                 </div>
               </div>
@@ -63,7 +63,7 @@ const ContactUs = () => {
                   />
                 </div>
                 <div className="contact_main_container_infoBox_card_info">
-                 <p>thepalm@email.com</p>
+                 <p>hotelbliss@email.com</p>
                 </div>
               </div>
               </Fade>

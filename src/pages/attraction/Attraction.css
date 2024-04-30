@@ -14,7 +14,7 @@
   margin-top: 50px;
 }
 
-/* First Slide Container */
+
 
 .first_slide_container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/Aquarium_Island_Cafe_1.jpg);
@@ -30,20 +30,6 @@
   transition: all 0.5s ease;
 }
 
-.first_slide_container.shrinked {
-  min-width: 60px !important;
-}
-
-.container.expanded .first_slide_container {
-  min-width: 250px;
-}
-
-.container.expanded .first_slide_container:hover .slide_info {
-  transform: rotate(0deg);
-  left: 20px;
-  bottom: 20px;
-  font-size: 22px;
-}
 
 .container.expanded .first_slide_container.slide_2,
 .container.expanded .first_slide_container.slide_3 {

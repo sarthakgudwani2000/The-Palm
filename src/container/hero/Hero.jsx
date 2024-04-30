@@ -13,7 +13,7 @@ function Hero() {
                      <Fade bottom distance="20%" duration={1700} >
                         <h5>Welcome To</h5>
                           <div className="hero_heading">
-                             <h1>The Palm</h1>
+                             <h1>Hotel Bliss</h1>
                          </div>
                         <div className ="subheading">
                            <h3>Come Experience Incredible</h3> 

@@ -55,10 +55,7 @@
   color: white;
 }
 
-.zonzo-text {
-  color: var(--color-beige);
-  text-decoration: underline;
-}
+
 
 
 .container__about {
@@ -92,7 +89,7 @@
 }
 
 .container-pages ul a:hover {
-  color: #017143;
+  color: var(--color-dark-green);
 }
 
 .container__more ul li {

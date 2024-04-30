@@ -67,7 +67,7 @@ const RoomsPage = () => {
 
           <img src={suit} alt=''/>
           <div className='middle'>
-            <h2>Palm Suit</h2>
+            <h2>Queen Room</h2>
           </div>
           <p>Rooms with personal corner couch and comfortable in amenities with adequate space give a luxurious feel.</p>
           <ul>

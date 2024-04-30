@@ -5,17 +5,6 @@ import "./Attraction.css"
 const Attraction = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleMouseEnter = () => {
-    if (!expanded) {
-      setExpanded(true);
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (expanded) {
-      setExpanded(false);
-    }
-  };
 
   const handleSlideMouseEnter = (slideClass) => {
     if (slideClass !== "first_slide_container" && expanded) {
@@ -41,19 +30,15 @@ const Attraction = () => {
         <h1>Uttarakhand Unveiled: Where Nature's Symphony Plays</h1>
         <h2>"Dive into the mystical tapestry of Uttarakhand, where every valley tells a story, and each mountain peak whispers a secret."</h2>
       </div>
-
+         
       {/* First Slide Container */}
-      <div class="attarction-slide" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <div className={`container ${expanded ? 'expanded' : ''}`} onMouseLeave={handleImageRightMouseLeave}>
+      <div class="attarction-slide" >
           <div className="slides">
-            <div className="first_slide_container" onMouseEnter={() => handleSlideMouseEnter('first_slide_container')}>
+            <div className="first_slide_container">
             </div>
-            <div className="first_slide_container slide_2" onMouseEnter={() => handleSlideMouseEnter('slide_2')}>
-            </div>
-            <div className="first_slide_container slide_3" onMouseEnter={() => handleSlideMouseEnter('slide_3')}>
-            </div>
+    
           </div>
-        </div>
+        
         <div>
           <h3>
             Aquarium Island Cafe
@@ -67,17 +52,12 @@ const Attraction = () => {
       </div>
 
       {/* Second Slide Container */}
-      <div class="attarction-slide" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <div className={`container ${expanded ? 'expanded' : ''}`} onMouseLeave={handleImageRightMouseLeave}>
-          <div className="slides">
-            <div className="second_slide_container" onMouseEnter={() => handleSlideMouseEnter('second_slide_container')}>
+      <div class="attarction-slide" >
+      <div className="slides">
+
+      <div className="second_slide_container">
             </div>
-            <div className="second_slide_container slide_4" onMouseEnter={() => handleSlideMouseEnter('slide_4')}>
             </div>
-            <div className="second_slide_container slide_5" onMouseEnter={() => handleSlideMouseEnter('slide_5')}>
-            </div>
-          </div>
-        </div>
         <div>
           <h3>
             Sattal Lake
@@ -90,18 +70,16 @@ const Attraction = () => {
         </div>
       </div>
 
+
       {/* Third Slide Container */}
-      <div class="attarction-slide" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <div className={`container ${expanded ? 'expanded' : ''}`} onMouseLeave={handleImageRightMouseLeave}>
+      <div class="attarction-slide">
+       
           <div className="slides">
-            <div className="third_slide_container" onMouseEnter={() => handleSlideMouseEnter('third_slide_container')}>
-            </div>
-            <div className="third_slide_container slide_6" onMouseEnter={() => handleSlideMouseEnter('slide_4')}>
-            </div>
-            <div className="third_slide_container slide_7" onMouseEnter={() => handleSlideMouseEnter('slide_5')}>
+           
+            <div className="third_slide_container" >
             </div>
           </div>
-        </div>
+        
         <div>
           <h3>
           Khurpatal
@@ -115,17 +93,12 @@ const Attraction = () => {
       </div>
 
       {/* Fourth Slide Container */}
-      <div class="attarction-slide" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <div className={`container ${expanded ? 'expanded' : ''}`} onMouseLeave={handleImageRightMouseLeave}>
+      <div class="attarction-slide" >
           <div className="slides">
-            <div className="fourth_slide_container" onMouseEnter={() => handleSlideMouseEnter('fourth_slide_container')}>
-            </div>
-            <div className="fourth_slide_container slide_8" onMouseEnter={() => handleSlideMouseEnter('slide_8')}>
-            </div>
-            <div className="fourth_slide_container slide_9" onMouseEnter={() => handleSlideMouseEnter('slide_9')}>
+           
+            <div className="fourth_slide_container" >
             </div>
           </div>
-        </div>
         <div>
           <h3>
           Almora
@@ -139,17 +112,14 @@ const Attraction = () => {
       </div>
 
       {/* Fifth Slide Container */}
-      <div class="attarction-slide" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <div className={`container ${expanded ? 'expanded' : ''}`} onMouseLeave={handleImageRightMouseLeave}>
+      <div class="attarction-slide">
           <div className="slides">
-            <div className="fifth_slide_container" onMouseEnter={() => handleSlideMouseEnter('fifth_slide_container')}>
+           
+            <div className="fifth_slide_container" >
             </div>
-            <div className="fifth_slide_container slide_10" onMouseEnter={() => handleSlideMouseEnter('slide_10')}>
-            </div>
-            <div className="fifth_slide_container slide_11" onMouseEnter={() => handleSlideMouseEnter('slide_11')}>
-            </div>
+           
           </div>
-        </div>
+        
         <div>
           <h3>
           Nainital
@@ -162,18 +132,14 @@ const Attraction = () => {
         </div>
       </div>
 
-      {/* Sixth Slide Container */}
-      <div class="attarction-slide" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <div className={`container ${expanded ? 'expanded' : ''}`} onMouseLeave={handleImageRightMouseLeave}>
+      <div class="attarction-slide" >
           <div className="slides">
-            <div className="sixth_slide_container" onMouseEnter={() => handleSlideMouseEnter('sixth_slide_container')}>
+           
+            <div className="sixth_slide_container">
             </div>
-            <div className="sixth_slide_container slide_12" onMouseEnter={() => handleSlideMouseEnter('slide_12')}>
-            </div>
-            <div className="sixth_slide_container slide_13" onMouseEnter={() => handleSlideMouseEnter('slide_13')}>
-            </div>
+           
           </div>
-        </div>
+        
         <div>
           <h3>
           Corbett National Park
